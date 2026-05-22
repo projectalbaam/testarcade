@@ -43,6 +43,9 @@
   function updateBtn(l) {
     const btn = document.getElementById('lang-btn');
     if (btn) btn.textContent = l === 'ko' ? 'EN' : '한';
+    document.querySelectorAll('#exit-btn').forEach(b => {
+      b.textContent = l === 'ko' ? '나가기' : 'Exit';
+    });
   }
 
   function injectBtn() {
